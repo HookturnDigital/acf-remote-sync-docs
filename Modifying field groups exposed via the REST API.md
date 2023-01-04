@@ -1,9 +1,5 @@
 # Modifying field groups exposed via the REST API
 
-By default, the same field groups are available for remote sync as those available for export via the Advanced Custom
-Fields > Tools > Export screen. Field groups that are locally defined only are not available for remote sync and as such
-are not exposed via the REST API.
-
 You may override the field groups that render via the REST API by using the `acfrs/rest/field-groups` filter. This
 filter makes it possible to:
 
