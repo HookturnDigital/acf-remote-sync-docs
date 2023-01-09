@@ -15,7 +15,7 @@ use a snippet manager plugin.
 ### Add an ACF field group
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
+add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
 
 	$field_groups[] = [
 		'key' => 'group_0987654321',
@@ -32,14 +32,14 @@ add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
 
 	// Return modified field groups array.
 	return $field_groups;
-} );
+}, 10, 2 );
 
 ```
 
 ### Remove an ACF field group
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
+add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
 
 	// Remove the field group with the key 'group_1234567890'.
 	foreach ( $field_groups as $index => $group ) {
@@ -50,13 +50,13 @@ add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
 
 	// Return modified field groups array.
 	return $field_groups;
-} );
+}, 10, 2 );
 ```
 
 ### Modify an ACF field group and/or its fields
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
+add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
 
 	// Modify a field group.
 	$field_groups = array_map( function ( $group ) {
@@ -92,5 +92,5 @@ add_filter( 'acfrs/rest/field-groups', function ( $field_groups ) {
 
 	// Return modified field groups array.
 	return $field_groups;
-} );
+}, 10, 2 );
 ```
