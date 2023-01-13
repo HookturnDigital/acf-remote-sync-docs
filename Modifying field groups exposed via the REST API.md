@@ -1,6 +1,6 @@
 # Modifying field groups exposed via the REST API
 
-You may override the field groups that render via the REST API by using the `acfrs/rest/field-groups` filter. This
+You may override the field groups that render via the REST API by using the `acfrs/rest/field_groups` filter. This
 filter makes it possible to:
 
 1. Add field groups that are not already available.
@@ -15,7 +15,7 @@ use a snippet manager plugin.
 ### Add an ACF field group
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
+add_filter( 'acfrs/rest/field_groups', function ( $field_groups, $request ) {
 
 	$field_groups[] = [
 		'key' => 'group_0987654321',
@@ -39,7 +39,7 @@ add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
 ### Remove an ACF field group
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
+add_filter( 'acfrs/rest/field_groups', function ( $field_groups, $request ) {
 
 	// Remove the field group with the key 'group_1234567890'.
 	foreach ( $field_groups as $index => $group ) {
@@ -56,7 +56,7 @@ add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
 ### Modify an ACF field group and/or its fields
 
 ```php
-add_filter( 'acfrs/rest/field-groups', function ( $field_groups, $request ) {
+add_filter( 'acfrs/rest/field_groups', function ( $field_groups, $request ) {
 
 	// Modify a field group.
 	$field_groups = array_map( function ( $group ) {
