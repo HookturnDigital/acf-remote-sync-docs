@@ -43,7 +43,7 @@ field group will be overwritten by the field group being pushed or pulled.
 The basic requirements for the plugin to function are as follows:
 
 - PHP version 7.0
-- WordPress version 6.1
+- WordPress version 6.1 with REST API enabled
 - ACF version 6.0
 
 **Note:** the plugin may work on older versions but we do develop for modern versions so it is best to remain updated at
