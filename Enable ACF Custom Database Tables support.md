@@ -1,4 +1,4 @@
-# Enabling ACF Custom Database Tables support
+# Enable ACF Custom Database Tables support
 
 By default, ACF Remote Sync will remove any field group settings associated
 with [ACF Custom Database Tables](https://hookturn.io/downloads/acf-custom-database-tables/). If you are using ACF
