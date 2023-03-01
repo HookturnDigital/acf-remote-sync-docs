@@ -1,4 +1,4 @@
-# Disable local field groups
+# Disabling local field groups
 
 By default, ACF Remote Sync will list all field groups for sync — this includes field groups registered via PHP or field
 groups loaded via ACF JSON. If you wish to prevent local field groups from remote sync, you may use
