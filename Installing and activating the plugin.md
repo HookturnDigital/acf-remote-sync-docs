@@ -1,6 +1,6 @@
 # Installing and activating the plugin
 
-1. Download the plugin zip file from your Hookturn account page.
+1. Download the plugin zip file from your [Hookturn account page](https://hookturn.io/account).
 2. Head to the plugins area of your website – WP Admin > Plugins > Add New – and upload the file.
 3. Activate the plugin.
 
