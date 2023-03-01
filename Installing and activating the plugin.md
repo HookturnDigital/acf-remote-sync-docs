@@ -10,4 +10,7 @@ In order to receive new features, bugfixes, and support, you must activate the l
 
 1. Head to the plugin settings page – **WP Admin > Settings > ACF Remote Sync**.
 2. Click the **Updates** link in the settings header.
-3. Enter your license key and click **Activate License**.
+3. Enter your license key.
+4. Click the **Activate License** button.
+
+![Activating the license](images/activating-the-license.jpg)
