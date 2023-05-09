@@ -2,7 +2,7 @@
 
 By default, ACF Remote Sync will remove any field group settings associated
 with [ACF Custom Database Tables](https://hookturn.io/downloads/acf-custom-database-tables/). If you are using ACF
-Custom Database Tables and wish to sync these settings, you may use the
+Custom Database Tables and wish to sync these settings, you may use
 the `acfrs/rest/should_export_acf_custom_database_table_settings` filter as per the example below.
 
 ```php
